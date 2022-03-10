@@ -27,10 +27,9 @@
           </div>
           <v-chip
             label
-            dark
-            color="red"
+            color="transparent;"
           >
-            <v-icon>mdi-alert-outline</v-icon>
+            <v-icon style="color: red;">mdi-alert-outline</v-icon>
           </v-chip>
         </div>
         <div v-else class="styleEmail">
@@ -39,21 +38,19 @@
           </div>
           <v-chip
               label
-              dark
-              color="green"
+              color="transparent;"
             >
-            <v-icon>mdi-check</v-icon>
+            <v-icon style="color: green;">mdi-check</v-icon>
           </v-chip>
         </div>
       </template>
       <template v-slot:[`item.position`]="{ item }">
         <v-chip
           label
-          dark
-          color="red"
+          color="transparent;"
           class="hoverChip"
         >
-          <v-icon>{{ item.position }}</v-icon>
+          <v-icon style="color: red;">{{ item.position }}</v-icon>
         </v-chip>
       </template>
     </v-data-table>
